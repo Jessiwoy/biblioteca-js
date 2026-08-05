@@ -1,0 +1,24 @@
+{
+  "name": "biblioteca-js",
+  "version": "1.0.0",
+  "description": "Sistema de gerenciamento de biblioteca desenvolvido com JavaScript.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jessiwoy/biblioteca-js.git"
+  },
+  "keywords": [],
+  "author": "Jessica Woytuski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jessiwoy/biblioteca-js/issues"
+  },
+  "homepage": "https://github.com/Jessiwoy/biblioteca-js#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
