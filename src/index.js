@@ -23,7 +23,7 @@ while (opcao !== "0") {
   console.log("0 - Sair");
 
   const entrada = prompt("Escolha uma opção: ");
-  opcao = entrada === null ? "0" : entrada;
+  opcao = entrada === null ? "0" : entrada.trim();
 
   if (opcao === "1") {
     listarLivros();
