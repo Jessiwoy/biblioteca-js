@@ -18,7 +18,7 @@ export function buscarLivro(titulo) {
     return;
   }
 
-  console.log(`Título: ${livroEncontrado.titulo}`);
+  console.log(`Título: ${livroEncontrado.titulo.toUpperCase()}`);
   console.log(`Autor: ${livroEncontrado.autor}`);
   console.log(`Categoria: ${livroEncontrado.categoria}`);
   console.log(`Páginas: ${livroEncontrado.paginas}`);

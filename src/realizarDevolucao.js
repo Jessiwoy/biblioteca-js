@@ -18,6 +18,11 @@ export function realizarDevolucao(titulo) {
     return;
   }
 
+  if (livroEncontrado.disponivel) {
+    console.log("O livro já está disponível.");
+    return;
+  }
+
   livroEncontrado.disponivel = true;
   console.log("Livro devolvido com sucesso.");
 }

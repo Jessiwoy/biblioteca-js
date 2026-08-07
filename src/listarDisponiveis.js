@@ -6,6 +6,11 @@ export function listarDisponiveis() {
     (livro) => livro.disponivel === true
   );
 
+  if (livrosDisponiveis.length === 0) {
+    console.log("Nenhum livro disponível.");
+    return;
+  }
+
   livrosDisponiveis.forEach((livro) => {
     console.log(`Título: ${livro.titulo.toUpperCase()}`);
     console.log(`Autor: ${livro.autor}`);

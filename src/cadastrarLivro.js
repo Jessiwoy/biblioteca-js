@@ -17,6 +17,16 @@ export function cadastrarLivro() {
     return;
   }
 
+  const tituloNormalizado = titulo.trim().toLowerCase();
+  const tituloDuplicado = dadosLivros.some(
+    (livro) => livro.titulo.trim().toLowerCase() === tituloNormalizado
+  );
+
+  if (tituloDuplicado) {
+    console.log("Já existe um livro cadastrado com esse título.");
+    return;
+  }
+
   if (!autor || autor.trim() === "") {
     console.log("Digite um autor válido.");
     return;

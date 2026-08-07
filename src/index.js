@@ -25,26 +25,46 @@ while (opcao !== "0") {
   const entrada = prompt("Escolha uma opção: ");
   opcao = entrada === null ? "0" : entrada.trim();
 
-  if (opcao === "1") {
-    listarLivros();
-  } else if (opcao === "2") {
-    const titulo = prompt("Digite o título do livro: ");
-    buscarLivro(titulo);
-  } else if (opcao === "3") {
-    listarDisponiveis();
-  } else if (opcao === "4") {
-    cadastrarLivro();
-  } else if (opcao === "5") {
-    const titulo = prompt("Digite o título do livro: ");
-    realizarEmprestimo(titulo);
-  } else if (opcao === "6") {
-    const titulo = prompt("Digite o título do livro: ");
-    realizarDevolucao(titulo);
-  } else if (opcao === "7") {
-    exibirEstatisticas();
-  } else if (opcao === "0") {
-    console.log("Sistema encerrado.");
-  } else {
-    console.log("Opção inválida.");
+  switch (opcao) {
+    case "1":
+      listarLivros();
+      break;
+
+    case "2": {
+      const titulo = prompt("Digite o título do livro: ");
+      buscarLivro(titulo);
+      break;
+    }
+
+    case "3":
+      listarDisponiveis();
+      break;
+
+    case "4":
+      cadastrarLivro();
+      break;
+
+    case "5": {
+      const titulo = prompt("Digite o título do livro: ");
+      realizarEmprestimo(titulo);
+      break;
+    }
+
+    case "6": {
+      const titulo = prompt("Digite o título do livro: ");
+      realizarDevolucao(titulo);
+      break;
+    }
+
+    case "7":
+      exibirEstatisticas();
+      break;
+
+    case "0":
+      console.log("Sistema encerrado.");
+      break;
+
+    default:
+      console.log("Opção inválida. Tente novamente.");
   }
 }
