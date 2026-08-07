@@ -2,6 +2,11 @@ import { dadosLivros } from "./dadosLivros.js";
 
 // RF03 - Buscar livro
 export function buscarLivro(titulo) {
+  if (!titulo || titulo.trim() === "") {
+    console.log("Digite um título válido.");
+    return;
+  }
+
   const tituloBuscado = titulo.trim().toLowerCase();
 
   const livroEncontrado = dadosLivros.find(
