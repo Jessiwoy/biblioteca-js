@@ -207,9 +207,7 @@ Essa organização permite manter um histórico de desenvolvimento claro e incre
 
 ## Demonstração
 
-O vídeo de demonstração do projeto será disponibilizado antes da entrega final.
-
-**Vídeo:** [adicionar link]
+**Vídeo:** https://drive.google.com/file/d/1WW6WIUQIKlFRAychoSQA5qhfqihZ_RxM/view?usp=drive_link
 
 ## Repositório
 
